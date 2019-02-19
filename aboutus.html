@@ -14,7 +14,24 @@
 </head>
 
 <body>
-
+    <!-- Copy and paste the entire navbar code also into aboutus.html to add the navigation also to that page. Make sure to change the <li> corresponding to "About" to active, and remove the active class from the Home link. Also, update the home link to take you back to index.html. 
+        Update the navbar-brand tag also to take you back to index.html. -->
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                   <a class="navbar-brand" href="./index.html">Ristorante Con Fusion</a>
+                   <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>   
+                    </div>         
+                </div>
+            </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -30,6 +47,13 @@
 
     <div class="container">
         <div class="row">
+            <!-- To add breadcrumbs to our pages, we take the help of the breadcrumb
+             and breadcrumb-item classes to add the following to the row containing
+              the About Us title in aboutus.html.-->
+         <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active">About Us</li>
+         </ol>
             <div class="col-12">
                <h3>About Us</h3>
                <hr>

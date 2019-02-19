@@ -16,8 +16,29 @@
       <link rel="stylesheet" href="css/styles.css">
       <title>Ristorante Con Fusion</title>
 </head>
-
 <body>
+<!-- We will now add a simple navigation bar to the web page so that it provides links to the other pages on the website. 
+    Start by adding the following code to the body just above the header jumbotron. 
+    Also added the Navbar to the aboutus.html page for a way for us to get back to the home page etc -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+       <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+      <!-- To hide the items from the navigation bar for the small screens,
+         we need to enclose the ul within another div as follows: -->
+       <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>   
+        </div>         
+    </div>
+</nav>
+
 <!-- Header of our HTML page adde a jumbotron to add emphasis to the keywords in the header and put a contianer on the first level div inside the header 
 adding column classes to the inner divs-->
     <header class="jumbotron">
