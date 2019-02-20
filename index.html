@@ -32,7 +32,9 @@ Bootstrap social Icons are in the social section-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
         </button>
-       <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+        <!-- Next, we will add the logo to the navbar where we display the restaurant brand. Go to the navbar and replace the code there for the
+         <a> tag with the "navbar-brand" class with the following code: Before we had the name instead of the image -->
+       <a class="navbar-brand" href="#"><a class="navbar-brand mr-auto" href="#"><img src="img/img/logo.png" height="30" width="41"></a></a>
       <!-- To hide the items from the navigation bar for the small screens,
          we need to enclose the ul within another div as follows: -->
        <div class="collapse navbar-collapse" id="Navbar">
@@ -56,7 +58,10 @@ adding column classes to the inner divs-->
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <!-- We will now add the restaurant logo to the Jumbotron. In index.html go to the header row inside the jumbotron and
+ replace the second <div> column with the following code: -->
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -69,10 +74,22 @@ adding column classes to the inner divs-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            </div>
+            <div class="col col-sm order-sm-first col-md">
+        <!-- Next we will work with the content on the web page and use the 
+        media object classes to style the content in the content rows.
+        Go to the first content row, and replace the content in the second column containing 
+        the description of Uthappizza with the following code: -->
+            <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
+             </div>
         </div>
 
 
@@ -91,10 +108,21 @@ adding column classes to the inner divs-->
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            </div>
+<!-- Next, we will go to the third row and replace the contents of the second column 
+    containing the description about Alberto with the following content: -->
+            <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>
+                </div>
         </div>
     </div>
     <!-- Footer of our HTML page, added a container; added to the first inner div  another row inside the footer as well as further below.  
