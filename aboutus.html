@@ -70,7 +70,40 @@
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                 <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
-            <div>
+            <!-- Next we add a card to the second div in the first content row as follows, 
+                updating the div first by adding the class col-12 col-sm-6 to it and then adding the card: -->
+                            <div class="col-12 col-sm-6">
+                                    <div class="card">
+                                        <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                                        <div class="card-body">
+                                            <dl class="row">
+                                                <dt class="col-6">Started</dt>
+                                                <dd class="col-6">3 Feb. 2013</dd>
+                                                <dt class="col-6">Major Stake Holder</dt>
+                                                <dd class="col-6">HK Fine Foods Inc.</dd>
+                                                <dt class="col-6">Last Year's Turnover</dt>
+                                                <dd class="col-6">$1,250,375</dd>
+                                                <dt class="col-6">Employees</dt>
+                                                <dd class="col-6">40</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+<!-- Next, we add a Bootstrap card and include a quotation in the card using the blockquote typography style: -->
+<!-- Note the use of the <blockquote> tag to create a block quote in the card. We can use a <footer>
+     inside the block quote to specify the attribution of the quote to its origin. -->
+                                <div class="col-12">
+                                        <div class="card card-body bg-light">
+                                            <blockquote class="blockquote">
+                                                <p class="mb-0">You better cut the pizza in four pieces because
+                                                    I'm not hungry enough to eat six.</p>
+                                                <footer class="blockquote-footer">Yogi Berra,
+                                                    <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+                                                    P. Pepe, Diversion Books, 2014</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
             </div>
         </div>
 
@@ -88,7 +121,56 @@
                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
             </div>
        </div>
-
+       <!-- We will add a new row of content after the Corporate Leadership row in the page. -->
+       <div class="row row-content">
+            <div class="col-12 col-sm-9">
+                <h2>Facts &amp; Figures</h2>
+                <!-- Inside the first column of this row, insert the table as follows: -->
+                <!-- Note the use of table-responsive class to create a responsive table, and the table-striped and thead-inverse classes for styling the table. -->
+                <!-- This tabe is repsponsive on smaller screens bc of the div "table-responsive" 
+                also have the class table-striped and head dark (Bootstrap)-->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>2013</th>
+                                <th>2014</th>
+                                <th>2015</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Employees</th>
+                                <td>15</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th>Guests Served</th>
+                                <td>15000</td>
+                                <td>45000</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr>
+                                <th>Special Events</th>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <th>Annual Turnover</th>
+                                <td>$251,325</td>
+                                <td>$1,250,375</td>
+                                <td>~$3,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+             
+            </div>
+       </div> 
     </div>
 
     <footer class="footer">
