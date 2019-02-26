@@ -1,250 +1,499 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <!--Working with this HTML Page we made and apply CSS grid classes to make this webpage repsonsive.-->
+
 <!-- Exercise 1 we used container,row and column classes along w/offest and... to desing our webpage a little bit -->
+
 <!-- Exercise 2 will add more to improve this webpage -->
+
 <!--Cont'd Exercise 2 we used the of custom CSS classes and used some of the classes for horizontal and vertical positioning -->
+
 <!-- We learnt about using icon fonts such as font awesome icons and bootstrap social icons 
+
     in a web project.   Font awesomes icons are in the Navbar and Contact info section.
+
 Bootstrap social Icons are in the social section-->
 
+
+
 <head>
+
     <!-- Required meta tags always come first -->
+
     <!-- Metatag w/viewport is what allows are webpages to be responsive -->
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+
+
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- We now need to include the CSS files for font awesome and bootstrap-social in the index.html file.
+
          Add the following code to the head of the file after the links for importing Bootstrap CSS classes: -->
+
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/bootstrap-social.css">
+
     <title>Ristorante Con Fusion</title>
+
 </head>
 
+
+
 <body>
+
     <!-- We will now add a simple navigation bar to the web page so that it provides links to the other pages on the website. 
+
     Start by adding the following code to the body just above the header jumbotron. 
+
     Also added the Navbar to the aboutus.html page for a way for us to get back to the home page etc -->
+
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+
         <div class="container">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
             <!-- Next, we will add the logo to the navbar where we display the restaurant brand. Go to the navbar and replace the code there for the
+
          <a> tag with the "navbar-brand" class with the following code: Before we had the name instead of the image -->
+
             <a class="navbar-brand" href="#"><a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"
+
                         height="30" width="41"></a></a>
+
             <!-- To hide the items from the navigation bar for the small screens,
+
          we need to enclose the ul within another div as follows: -->
+
             <div class="collapse navbar-collapse" id="Navbar">
+
                 <ul class="navbar-nav mr-auto">
+
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+
                             Home</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+
                                 class="fa fa-info fa-lg"></span> About</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+
                     </li>
+
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>
+
                             Contact</a>
+
                     </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
+
+
     <!-- Header of our HTML page adde a jumbotron to add emphasis to the keywords in the header and put a contianer on the first level div inside the header 
+
 adding column classes to the inner divs-->
+
     <header class="jumbotron">
+
         <div class="container">
+
             <div class="row row-header">
+
                 <div class="col-6">
+
                     <h1>Ristorante con Fusion</h1>
+
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+
                         lipsmacking creations will tickle your culinary senses!</p>
+
                 </div>
+
                 <!-- We will now add the restaurant logo to the Jumbotron. In index.html go to the header row inside the jumbotron and
+
  replace the second <div> column with the following code: -->
+
                 <div class="col-12 col-sm align-self-center">
+
                     <img src="img/logo.png" class="img-fluid">
+
                 </div>
+
                 <div class="col-12 col-sm-3">
+
                     <a class="btn btn-warning btn-lg btn-block mt-5" href="#reservations">Reserve Table</a>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
+
     <!-- Main section of the body or actual content of our body's HTML page -->
+
     <!-- Added a container to the main section of the body with 3 rows for each heading section div
+
     also added an order list based on the info we want to show first on the device it's shown on -->
+
     <div class="container">
+
         <div class="row row-content align-items-center">
+
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
+
                 <h3>Our Lipsmacking Culinary Creations</h3>
+
             </div>
+
             <div class="col col-sm order-sm-first col-md">
+
                 <!-- Next we will work with the content on the web page and use the 
+
         media object classes to style the content in the content rows.
+
         Go to the first content row, and replace the content in the second column containing 
+
         the description of Uthappizza with the following code: -->
+
                 <div class="media">
+
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
+
                     <div class="media-body">
+
                         <!-- In this short exercise we will examine the use of badges as a way of alerting users. 
+
                             At the end of this exercise, you will be able to:
+
                             Add a badge to your web page using the Bootstrap badge class -->
+
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span
+
                                 class="badge badge-pill badge-secondary">$4.99</span></h2>
+
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+
                             Italian pizza, topped with Cerignola olives, ripe vine
+
                             cherry tomatoes, Vidalia onion, Guntur chillies and
+
                             Buffalo Paneer.</p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
 
 
+
+
+
         <div class="row row-content align-items-center">
+
             <div class="col-12 col-sm-4 col-md-3">
+
                 <h3>This Month's Promotions</h3>
+
             </div>
+
             <div class="col col-sm col-md">
+
                 <div class="media">
+
                     <div class="media-body">
+
                         <h2 class="mt-0 mb-1">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
+
                             appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft
+
                             drinks. All for just $19.99 per person</p>
+
                     </div>
+
                     <img class="ml-3" src="img/buffet.png" alt="Buffet Picture">
+
                 </div>
+
             </div>
+
         </div>
 
+
+
         <div class="row row-content align-items-center">
+
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
+
                 <h3>Meet our Culinary Specialists</h3>
+
             </div>
+
             <div class="col col-sm order-sm-first col-md">
+
                 <!-- Next, we will go to the third row and replace the contents of the second column 
+
         containing the description about Alberto with the following content: -->
+
                 <div class="media">
+
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
+
+                        alt="Alberto Somayya">
+
                     <div class="media-body">
+
                         <h2 class="mt-0">Alberto Somayya</h2>
+
                         <h4>Executive Chef</h4>
+
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+
                             International experience having worked closely with
+
                             whos-who in the culinary world, he specializes in
+
                             creating mouthwatering Indo-Italian fusion experiences.
+
                         </p>
+
                     </div>
-                    <img class="mr-3" src="img/alberto.png"
-                    alt="Alberto Somayya">
+
                 </div>
+
             </div>
+
         </div>
+
+
 
       <!--Reservations Card-->
+
       <div class="container">
+
             <div class="row d-flex justify-content-center">
+
         <div class="col-sm-12 col-md-8 m-3" id="reservations">
+
             <div class="card">
+
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+
                 <div class="card-body">
+
                     <form>
+
                         <!--Reservations group number-->
+
                         <div class="form-group row">
+
                             <label for="reservationsGuests" class="col-form-label col-md-2">Number of Guests: </label>
+
                             <div class="radio align-self-center">
+
                                 <input type="radio" name="reservationsGuests" value="1" checked /> 1
+
                                 <input type="radio" name="reservationsGuests" value="2" /> 2
+
                                 <input type="radio" name="reservationsGuests" value="3" /> 3
+
                                 <input type="radio" name="reservationsGuests" value="4" /> 4
+
                                 <input type="radio" name="reservationsGuests" value="5" /> 5
+
                                 <input type="radio" name="reservationsGuests" value="6" /> 6
+
                             </div>
+
                         </div>
+
                         <!--Reservations Date and Time-->
+
                         <div class="form-group row form-inline">
+
                             <label for="reservationsGuests" class="col-form-label col-md-2">Date and Time:</label>
+
                             <div class="input-group">
+
                                 <div class="input-group-prepend">
+
                                     <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+
                                 </div>
+
                                 <input type="text" class="form-control" name="reservationsDate" placeholder="Date" />
+
                             </div>
+
                             <div class="input-group">
+
                                 <div class="input-group-prepend">
+
                                     <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+
                                 </div>
+
                                 <input type="text" class="form-control" name="reservationsTime" placeholder="Time" />
+
                             </div>
+
                         </div>
+
                         <!--Reservations Submit-->
+
                         <div class="form-group row">
+
                             <div class="offset-md-2">
+
                                 <button type="submit" class="btn btn-primary">Reserve</button>
+
                             </div>
+
                         </div>
+
                     </form>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
             <!-- Footer of our HTML page, added a container; added to the first inner div  another row inside the footer as well as further below.  
+
     added 2 rows to the footer added column classes.  Also applied offset class bc of odd number of columns-->
+
             <footer class="footer">
+
                 <div class="container">
+
                     <div class="row">
+
                         <div class="col-4 offset-1 col-sm-2">
+
                             <h5>Links</h5>
+
                             <ul class="list-unstyled">
+
                                 <li><a href="#">Home</a></li>
+
                                 <li><a href="aboutus.html">About</a></li>
+
                                 <li><a href="#">Menu</a></li>
+
                                 <li><a href="#">Contact</a></li>
+
                             </ul>
+
                         </div>
+
                         <div class="col-7 col-sm-5">
+
                             <h5>Our Address</h5>
+
                             <address>
+
                                 <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+
                                 <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+
                                 <i class="fa fa-envelope fa-lg"></i>:
+
                                 <a href="mailto:confusion@food.net">confusion@food.net</a>
+
                             </address>
+
                         </div>
+
                         <div class="col-12 col-sm-4 align-self-center">
+
                             <div class="text-center">
+
                                 <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+
                                         class="fa fa-google-plus"></i></a>
+
                                 <a class="btn btn-social-icon btn-facebook"
+
                                     href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+
                                 <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+
                                         class="fa fa-linkedin"></i></a>
+
                                 <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+
                                         class="fa fa-twitter"></i></a>
+
                                 <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+
                                         class="fa fa-youtube"></i></a>
+
                                 <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+
                             </div>
+
                         </div>
+
                     </div>
+
                     <div class="row justify-content-center">
+
                         <div class="col-auto">
+
                             <p>© Copyright 2018 Ristorante Con Fusion</p>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </footer>
+
             <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+
             <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+
             <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+
             <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
+
 
 </html>
