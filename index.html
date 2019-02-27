@@ -105,15 +105,56 @@ Bootstrap social Icons are in the social section-->
                     </li>
 
                 </ul>
-
+                <!-- Next we introduce another link on the right side of the navbar in order to trigger the display of the modal. 
+                    To do this, add the following code in the navbar after the </ul>: -->
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+                </span>
             </div>
 
         </div>
 
     </nav>
 
-
-
+<!--Login Modal at the Top right of the page- In the next step we introduce the modal to the web page. To set up the modal, 
+    add the following code right after the navbar at the top of the page. -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Header of our HTML page adde a jumbotron to add emphasis to the keywords in the header and put a contianer on the first level div inside the header 
 
 adding column classes to the inner divs-->
@@ -145,8 +186,11 @@ adding column classes to the inner divs-->
                 </div>
 
                 <div class="col-12 col-sm-3">
-
-                    <a class="btn btn-warning btn-lg btn-block mt-5" href="#reservations">Reserve Table</a>
+<!-- et us now switch to the index.html page. We will now add a tooltip to this page. The tooltip will be added to the "Reserve Table" button that is in the jumbotron. 
+    We will update the <a> tag for the button as follows: -->
+                    <a role="button" class="btn btn-block btn-lg nav-link btn-warning"
+                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve Table</a>
 
                 </div>
 
@@ -491,6 +535,12 @@ adding column classes to the inner divs-->
             <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 
             <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+           <!-- The tooltip needs to be activated by adding a small Javascript code to the bottom of the page as follows: -->
+           <script>
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+            </script>
 
 </body>
 
