@@ -59,3 +59,11 @@ body{
     left: 0;
     min-height: 300px;
 }
+
+/* we add the following CSS class to styles.css file
+ to position the buttons at the bottom-right corner of the carousel: */
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
