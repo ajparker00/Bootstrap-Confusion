@@ -12,3 +12,11 @@ $("#carousel-button").click(function(){
         $("#carousel-button").children("span").addClass('fa-pause'); 
 }
 });
+
+$('#reserveTableButton').click(function(){
+    $('#reserve').modal('show');
+    });
+
+$("#loginLink").click(function() {
+    $('#loginModal').modal('show');
+    });

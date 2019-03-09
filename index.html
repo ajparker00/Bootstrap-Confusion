@@ -107,8 +107,12 @@ Bootstrap social Icons are in the social section-->
                 </ul>
                 <!-- Next we introduce another link on the right side of the navbar in order to trigger the display of the modal. 
                     To do this, add the following code in the navbar after the </ul>: -->
+
+                    <!-- The data-* attributes have been removed from the Login link. Before bootstrap js plugins was in side the link
+                     data-toggle="modal" data-target="#loginModal" was inside the a link -->
+                     <!-- Updated the button and the link so that they will trigger the appropriate JavaScript code when clicked. Have to use id=loginLink -->
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginLink">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -158,8 +162,12 @@ Bootstrap social Icons are in the social section-->
             </div>
         </div>
     </div>
-    <!-- Header of our HTML page adde a jumbotron to add emphasis to the keywords in the header and
+    <!-- Header of our HTML page added a jumbotron to add emphasis to the keywords in the header and
          put a contianer on the first level div inside the header -->
+
+
+<!-- To activate the modal using JS I had to write the JS code in the script.js file as well as conntect the Reserve a table button w/ type="button" below to this modal -->
+
     <!-- Modal -->
     <div class="modal fade" id="reserve" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -298,10 +306,13 @@ Bootstrap social Icons are in the social section-->
                 <!-- Let us now switch to the index.html page. We will now add a tooltip to this page. The tooltip will be added to the "Reserve Table" button that is in the jumbotron. 
     We will update the <a> tag for the button as follows: -->
 
-                <!-- Button trigger modal -->
+        
+        <!--In this task you will be removing the data-* attributes from the Reserve Table button in the Jumbotron that 
+        enable the toggling of the Reserve table Modal. Data-toggle="modal" data-target="#reserve" was inside the button   -->
+        <!-- Updated the button and the link so that they will trigger the appropriate JavaScript code when clicked. Have to use ID="reseve" in the modal further down below -->
+        <!-- Button trigger modal -->
                 <div class="col-12 col-sm-3">
-                    <button type="button" class="btn btn-block btn-lg nav-link btn-warning" data-toggle="modal"
-                        data-target="#reserve">
+                    <button type="button" id="reserveTableButton" class="btn btn-block btn-lg nav-link btn-warning">
                         Reserve a Table
                     </button>
 

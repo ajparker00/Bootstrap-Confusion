@@ -51,3 +51,15 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+.modal-dialog .modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal-dialog .modal-header .close {
+    color: floralwhite; }
+
+.modal-dialog .modal-body {
+  background: #D1C4E9; }
+
+.modal-dialog .modal-footer {
+  background: #9575CD; }
